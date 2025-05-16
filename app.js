@@ -28,7 +28,7 @@ app.use(express.static('./public'))
 app.set('trust proxy', 1)
 app.use(
   rateLimiter({
-    windowsMs: 15 * 60 * 1000,
+    windowMs: 15 * 60 * 1000,
     max: 100,
   })
 )
