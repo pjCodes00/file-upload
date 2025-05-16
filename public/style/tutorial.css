@@ -1,0 +1,68 @@
+.tutorial-cont{
+  position: relative;
+  width: fit-content;
+}
+
+.tutorial-cont .tooltip{
+  position: absolute;
+  color: white;
+  background-color: rgb(3, 123, 3);
+  top:-40px;
+  width: 100px;
+  padding: 8px;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tutorial-cont:hover .tooltip{
+  opacity: 1;
+}
+
+.fa-file-video{
+  color: rgb(23, 240, 23);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modal{
+  position: fixed;
+  z-index: 999;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0, 0.7);
+  display: none;
+}
+
+.modal-content{
+  position: relative;
+  background-color: #463f3f;
+  margin: 10% auto;
+  padding: 30px 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  height: 365px;
+}
+
+.modal-content video{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.close-btn{
+  position: absolute;
+  top: 8px;
+  right: 2px;
+  color: rgb(5, 246, 5);
+  background-color: black;
+   font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 5px;
+  border-radius: 5px;
+  
+}

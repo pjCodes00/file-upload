@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Upload</title>
+    <link rel="stylesheet" href="./style/file-upload.css">
+    <link rel="stylesheet" href="./style/tutorial.css">
+    <script src="https://kit.fontawesome.com/80ccbcef3b.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <div class="tutorial-cont">
+     <i class="fa-solid fa-file-video"></i>
+     <div class="tooltip">Watch tutorial</div>
+    </div>
+
+    <div class="msg-container"></div>
+    <div class="main-cont">
+      <div class="title">FILE UPLOAD</div>
+      <div class="input-group">
+        <p>Name</p>
+        <input type="text" placeholder="name" class="name input">
+      </div>
+      <div class="input-group">
+        <p>Price</p>
+        <input type="text" placeholder="Price" class="price input"> 
+      </div>
+      <div class="input-group">
+        <p>Image</p>
+        <input type="file" accept="image/*" class="image" hidden><p>
+        <div class="btn-name-cont">
+          <button type="button" class="image-btn">Choose Image</button>
+          <p class="file-name">No file chosen</p>  
+        </div>
+      </div>
+      <div class="add-prod-cont">
+        <button class="add-btn">Add product</button>
+      </div>
+    </div>
+    <div><button class="product-btn" onclick="window.location.href='images-page.html'">Product page</button></div>
+
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <video class="tutorial-video" controls>
+        <source src="./videos/tutorial.mp4" type="video/mp4">    
+      </video>
+      <video></video>
+    </div>
+  </div>
+
+
+   <script type="module" src="./scripts/file-upload.js"></script>
+   <script type="module" src="./scripts/tutorial.js"></script>
+  </body>
+</html>

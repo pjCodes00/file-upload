@@ -1,0 +1,84 @@
+ 
+      body{
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin:0;
+        gap: 20px;
+      }
+
+      .main-cont{
+  
+        width: 380px;
+        height: 370px;
+        background-color: white;
+        box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .title{
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .input-group{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+      }
+
+      .input-group .input{
+        height: 25px;
+        padding-left: 5px;
+      }
+
+    
+      .add-prod-cont{
+        margin-top: 10px;
+      }
+
+      .msg-cont{
+        width: 380px;
+        height: 40px;
+        background-color: white;
+        color: #d80505;
+        font-size: 14px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .add-btn, .product-btn{
+        background-color: blue;
+        color: white;
+        padding: 6px 20px;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .btn-name-cont{
+        display: flex;
+        align-items: center;
+        margin-top: -50px;
+        gap: 10px;
+      }
+
+      .image-btn{
+        background-color: rgb(119, 119, 241);
+        color: white;
+        padding: 6px 20px;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+    
