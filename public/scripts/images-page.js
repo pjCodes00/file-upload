@@ -6,7 +6,7 @@ const successMsg= document.querySelector('.success-msg')
         console.log(data)
 
         const products= data.products
-
+ 
         let html= ''
         products.forEach((product) => {
           html += `

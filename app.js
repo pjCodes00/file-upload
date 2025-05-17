@@ -12,6 +12,7 @@ const helmet= require('helmet')
 const cors= require('cors')
 const xss= require('xss-clean')
 const rateLimiter= require('express-rate-limit')
+const path= require('path')
 
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
@@ -21,9 +22,18 @@ cloudinary.config({
 const port= process.env.PORT || 3500
 
 
-
+ 
 app.use(fileUpload({useTempFiles: true}))
+
 app.use(express.static('./public'))
+
+app.get('/:page', (req, res, next) => {
+  const page= req.params.page
+  const filePath= path.join(__dirname, 'public', `${page}.html`)
+  res.sendFile(filePath, (err) => {
+    if (err) next()
+  })
+})
 
 app.set('trust proxy', 1)
 app.use(
