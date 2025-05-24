@@ -4,7 +4,7 @@
     const closeBtn = document.querySelector('.close-btn');
  
  videoIcon.addEventListener('click', () => {
-      modal.style.display= 'block'
+      modal.style.display= 'flex'
       video.play()
     })
 
